@@ -257,5 +257,8 @@
     <ClInclude Include="ArrayDictionary.h">
       <Filter>Header Files\Dictionary</Filter>
     </ClInclude>
+    <ClInclude Include="TreeDictionary.h">
+      <Filter>Header Files\Dictionary</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

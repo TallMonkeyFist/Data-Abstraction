@@ -197,6 +197,7 @@
     <ClInclude Include="StackInterface.h" />
     <ClInclude Include="StackInterfaceTester.h" />
     <ClInclude Include="ToyBox.h" />
+    <ClInclude Include="TreeDictionary.h" />
     <ClInclude Include="TreeNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
