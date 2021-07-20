@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Box">
+      <UniqueIdentifier>{7fb8937e-7606-4308-b268-0ede9154a0f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Box">
+      <UniqueIdentifier>{c9098445-7137-4bda-8761-b3b024b3c31d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{b551b9d6-1c8f-4055-95e1-32f21c07aec4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Bag">
+      <UniqueIdentifier>{bd47b4c0-dfdb-4d2b-8a42-0a6083d44741}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Bag">
+      <UniqueIdentifier>{1999f0ff-9135-4408-862f-bcef8c8f9f05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Links">
+      <UniqueIdentifier>{fac65d95-aba2-4b65-b978-2c81d9d61502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utils">
+      <UniqueIdentifier>{c5410783-7ff9-4f2b-8a1f-6a1efc922c7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Stack">
+      <UniqueIdentifier>{ee94d845-13ca-41e8-be90-23defedde08f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\List">
+      <UniqueIdentifier>{4791945e-e1d7-494d-8fae-4f44fde3968c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Exceptions">
+      <UniqueIdentifier>{553ded17-0f1c-4abf-960c-ba4438883769}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Exceptions">
+      <UniqueIdentifier>{8b9abee7-fcc0-4dcf-b09c-78b1ec159322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\List\Interfaces">
+      <UniqueIdentifier>{d2866be3-1d69-46bf-ba7e-96c9aec9775a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\List\Test For Interface">
+      <UniqueIdentifier>{48a37c3c-0461-4f37-9a8d-41a7052069bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Queue">
+      <UniqueIdentifier>{0f228ca0-dcee-4589-ba4b-827d248c99b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Queue\Interfaces">
+      <UniqueIdentifier>{ca0f2ae2-eb32-4d39-92a5-ca33cb59dbda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Queue\Test For Interface">
+      <UniqueIdentifier>{10694ecc-ac02-48a9-85ae-d18d382877a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tree">
+      <UniqueIdentifier>{35c470c0-302e-4625-b04b-311f1565e8e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tree\Interface">
+      <UniqueIdentifier>{3f65e7c3-c96e-4dfd-8e80-388822e6e51e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tree\Nodes">
+      <UniqueIdentifier>{70b0df63-8e7c-4243-a14f-ebdef604a782}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tree\Test Headers">
+      <UniqueIdentifier>{aa59e570-20f8-482f-8fbf-f81d81c7ed61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Heap">
+      <UniqueIdentifier>{6835efb0-177b-4c9a-813d-f06be6ff1951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Heap\Interfaces">
+      <UniqueIdentifier>{3ab214ff-f74e-4e5d-b98d-7b6389507664}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Dictionary">
+      <UniqueIdentifier>{787b9389-8bd5-44f0-8557-306c7817385d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Driver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GoodMemory.cpp">
+      <Filter>Source Files\Box</Filter>
+    </ClCompile>
+    <ClCompile Include="BagInterfaceTester.h">
+      <Filter>Header Files\Bag</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayUtils.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Math.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="StringUtil.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="PreconViolatedExcept.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="NotFoundException.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PlainBox.h">
+      <Filter>Header Files\Box</Filter>
+    </ClInclude>
+    <ClInclude Include="ToyBox.h">
+      <Filter>Header Files\Box</Filter>
+    </ClInclude>
+    <ClInclude Include="MagicBox.h">
+      <Filter>Header Files\Box</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxInterface.h">
+      <Filter>Header Files\Box</Filter>
+    </ClInclude>
+    <ClInclude Include="BagInterface.h">
+      <Filter>Header Files\Bag</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayBag.h">
+      <Filter>Header Files\Bag</Filter>
+    </ClInclude>
+    <ClInclude Include="GoodMemory.h">
+      <Filter>Header Files\Box</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Header Files\Links</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedBag.h">
+      <Filter>Header Files\Bag</Filter>
+    </ClInclude>
+    <ClInclude Include="FlightMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StackInterface.h">
+      <Filter>Header Files\Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="StackInterfaceTester.h">
+      <Filter>Header Files\Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayStack.h">
+      <Filter>Header Files\Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedStack.h">
+      <Filter>Header Files\Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="PreconViolatedExcept.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayList.h">
+      <Filter>Header Files\List</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
+      <Filter>Header Files\List</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleNode.h">
+      <Filter>Header Files\Links</Filter>
+    </ClInclude>
+    <ClInclude Include="SortUtils.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedSortedList.h">
+      <Filter>Header Files\List</Filter>
+    </ClInclude>
+    <ClInclude Include="SortedListHasA.h">
+      <Filter>Header Files\List</Filter>
+    </ClInclude>
+    <ClInclude Include="SortedListIsA.h">
+      <Filter>Header Files\List</Filter>
+    </ClInclude>
+    <ClInclude Include="SortedListAsA.h">
+      <Filter>Header Files\List</Filter>
+    </ClInclude>
+    <ClInclude Include="ListInterface.h">
+      <Filter>Header Files\List\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="SortedListInterface.h">
+      <Filter>Header Files\List\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="SortedListInterfaceTester.h">
+      <Filter>Header Files\List\Test For Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="ListInterfaceTester.h">
+      <Filter>Header Files\List\Test For Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="ListQueue.h">
+      <Filter>Header Files\Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedQueue.h">
+      <Filter>Header Files\Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="PriorityQueueInterface.h">
+      <Filter>Header Files\Queue\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="QueueInterface.h">
+      <Filter>Header Files\Queue\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="QueueInterfaceTester.h">
+      <Filter>Header Files\Queue\Test For Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayQueue.h">
+      <Filter>Header Files\Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_PriorityQueue.h">
+      <Filter>Header Files\Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryTreeInterface.h">
+      <Filter>Header Files\Tree\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryNode.h">
+      <Filter>Header Files\Tree\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeNode.h">
+      <Filter>Header Files\Tree\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryNodeTree.h">
+      <Filter>Header Files\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="NotFoundException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="BinarySearchTree.h">
+      <Filter>Header Files\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryTreeInterfaceTester.h">
+      <Filter>Header Files\Tree\Test Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="BinarySearchTreeTester.h">
+      <Filter>Header Files\Tree\Test Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="HeapInterface.h">
+      <Filter>Header Files\Heap\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayMaxHeap.h">
+      <Filter>Header Files\Heap</Filter>
+    </ClInclude>
+    <ClInclude Include="HeapPriorityQueue.h">
+      <Filter>Header Files\Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedListIterator.h">
+      <Filter>Header Files\List</Filter>
+    </ClInclude>
+    <ClInclude Include="DictionaryInterface.h">
+      <Filter>Header Files\Dictionary</Filter>
+    </ClInclude>
+    <ClInclude Include="Entry.h">
+      <Filter>Header Files\Dictionary</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayDictionary.h">
+      <Filter>Header Files\Dictionary</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
