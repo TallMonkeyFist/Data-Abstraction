@@ -168,6 +168,8 @@
     <ClInclude Include="Entry.h" />
     <ClInclude Include="FlightMap.h" />
     <ClInclude Include="GoodMemory.h" />
+    <ClInclude Include="HashedDictionary.h" />
+    <ClInclude Include="HashedEntry.h" />
     <ClInclude Include="HeapInterface.h" />
     <ClInclude Include="HeapPriorityQueue.h" />
     <ClInclude Include="LinkedBag.h" />

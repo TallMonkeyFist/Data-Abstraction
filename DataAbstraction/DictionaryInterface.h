@@ -54,5 +54,14 @@ public:
 	@param visit A client function*/
 	virtual void traverse(void visit(ValueType&)) const = 0;
 
+	/**Replaces the entry for a given key if possible
+	* @post If the replacement is successful, the value for the key will be
+	*	updated to be the provided value
+	* @param searchKey The search key associated with the value to be added.
+	* @param newValue The value to replace the existing value
+	* @return True if the entry was successfully replaced, or false if not
+	*/
+	virtual void replace(const KeyType& searchKey, const ValueType& newValue) = 0;
+
 	virtual ~DictionaryInterface() { }
 };

@@ -17,3 +17,17 @@ bool TreeDictionary<KeyType, ValueType>::remove(const KeyType& searchKey)
 	Entry<KeyType, ValueType> entry = Entry(searchKey, ValueType());
 	return entryTree.remove(entry);
 }
+
+template <class KeyType, class ValueType>
+bool TreeDictionary<KeyType, ValueType>::replace(
+	const KeyType& searchKey, const ValueType& newValue)
+{
+	Entry<KeyType, ValueType> newEntry = Entry(searchKey, newValue);
+	if (entryTree.contains(newEntry))
+	{
+		entryTree.remove(newEntry);
+		entryTree.add(newEntry);
+		return true;
+	}
+	return false;
+}

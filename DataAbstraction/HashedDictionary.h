@@ -1,19 +1,23 @@
 #pragma once
 
+#include <memory>
+
 #include "DictionaryInterface.h"
-#include "BinarySearchTree.h"
-#include "Entry.h"
-#include "NotFoundException.h"
-#include "PreconViolatedExcept.h"
+#include "HashedEntry.h"
 
 template <class KeyType, class ValueType>
-class TreeDictionary : public DictionaryInterface<KeyType, ValueType>
-{
-public:
-	TreeDictionary();
-	TreeDictionary(const TreeDictionary<Entry<KeyType, ValueType>>& dictionary);
+using hashTableType = std::shared_ptr<HashedEntry<KeyType, ValueType>>[];
 
-	virtual~TreeDictionary();
+template <class KeyType, class ValueType>
+class HashedDictionary : public DictionaryInterface<KeyType, ValueType>
+{
+private:
+	static const int DEFAULT_CAPACITY = 101;
+
+public:
+	HashedDictionary();
+
+	~HashedDictionary();
 
 	bool isEmpty() const;
 	int getNumberOfEntries() const;
@@ -30,7 +34,12 @@ public:
 	bool replace(const KeyType& searchKey, const ValueType& newValue);
 
 private:
-	BinarySearchTree<Entry<KeyType, ValueType>> entryTree;
+	std::unique_ptr<hashTableType<KeyType, ValueType>> hashTable;
+
+	int entryCount;
+	int hashTableSize;
+
+	int getHashIndex(KeyType searchKey);
 };
 
-#include "TreeDictionary.cpp"
+#include "HashedDictionary.cpp"

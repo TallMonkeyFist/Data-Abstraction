@@ -28,6 +28,8 @@ public:
 	and calls a given client function once for the value in each entry.*/
 	void traverse(void visit(ValueType&)) const;
 
+	bool replace(const KeyType& searchKey, const ValueType& newValue);
+
 private:
 	static const int DEFAULT_CAPACITY = 21;
 	std::unique_ptr<Entry<KeyType, ValueType>[]> entries;

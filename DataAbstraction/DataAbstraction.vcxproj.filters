@@ -260,5 +260,11 @@
     <ClInclude Include="TreeDictionary.h">
       <Filter>Header Files\Dictionary</Filter>
     </ClInclude>
+    <ClInclude Include="HashedDictionary.h">
+      <Filter>Header Files\Dictionary</Filter>
+    </ClInclude>
+    <ClInclude Include="HashedEntry.h">
+      <Filter>Header Files\Dictionary</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
