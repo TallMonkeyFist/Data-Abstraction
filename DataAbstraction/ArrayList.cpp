@@ -36,7 +36,7 @@ bool ArrayList<ItemType>::insert(int atIndex, const ItemType& newEntry)
 template <class ItemType>
 bool ArrayList<ItemType>::remove(int atIndex)
 {
-	if (0 <= atIndex < itemCount)
+	if (0 <= atIndex && atIndex < itemCount)
 	{
 		for (int idx = atIndex; idx < itemCount; idx++)
 		{

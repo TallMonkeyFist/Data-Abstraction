@@ -164,6 +164,7 @@
     <ClInclude Include="BinaryTreeInterfaceTester.h" />
     <ClInclude Include="BoxInterface.h" />
     <ClInclude Include="DictionaryInterface.h" />
+    <ClInclude Include="DictionaryInterfaceTester.h" />
     <ClInclude Include="DoubleNode.h" />
     <ClInclude Include="Entry.h" />
     <ClInclude Include="FlightMap.h" />

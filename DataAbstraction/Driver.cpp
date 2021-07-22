@@ -12,6 +12,7 @@
 #include "BinarySearchTreeTester.h"
 #include "BinaryTreeInterfaceTester.h"
 #include "ArrayMaxHeap.h"
+#include "DictionaryInterfaceTester.h"
 
 #include <algorithm>
 #include <chrono>
@@ -115,7 +116,7 @@ void testIterator()
 		displayString(*iter);
 		++iter;
 	}
-	std::cout << "\Finish\n";
+	std::cout << "\nFinish\n";
 
 	delete list;
 	list = nullptr;
@@ -146,7 +147,7 @@ int main(int argv, char** argc)
 
 	//testIterator();*/
 
-
+	DictionaryInterfaceTester::TestDictionary();
 
 	//For Checking for memory leaks
 	_CrtDumpMemoryLeaks();

@@ -61,7 +61,7 @@ public:
 	* @param newValue The value to replace the existing value
 	* @return True if the entry was successfully replaced, or false if not
 	*/
-	virtual void replace(const KeyType& searchKey, const ValueType& newValue) = 0;
+	virtual bool replace(const KeyType& searchKey, const ValueType& newValue) = 0;
 
 	virtual ~DictionaryInterface() { }
 };

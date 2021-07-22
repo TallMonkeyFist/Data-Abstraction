@@ -266,5 +266,8 @@
     <ClInclude Include="HashedEntry.h">
       <Filter>Header Files\Dictionary</Filter>
     </ClInclude>
+    <ClInclude Include="DictionaryInterfaceTester.h">
+      <Filter>Header Files\Dictionary</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
