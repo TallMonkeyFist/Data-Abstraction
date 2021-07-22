@@ -20,7 +20,7 @@ public:
 	bool remove(const ItemType& target);
 	void clear();
 	ItemType getEntry(const ItemType& anEntry) const throw(NotFoundException);
-	bool contains(const ItemType& anEntry);
+	bool contains(const ItemType& anEntry) const;
 
 	void preorderTraverse(void visit(ItemType&)) const;
 	void inorderTraverse(void visit(ItemType&)) const;

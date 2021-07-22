@@ -1,5 +1,3 @@
-#include "BinaryNodeTree.h"
-
 template <class ItemType>
 BinaryNodeTree<ItemType>::BinaryNodeTree() : rootPtr(nullptr)
 {
@@ -262,8 +260,8 @@ std::shared_ptr<BinaryNode<ItemType>> BinaryNodeTree<ItemType>::copyTree(const s
 	if (oldTreeRootPtr != nullptr)
 	{
 		newNodePtr = std::make_shared<BinaryNode<ItemType>>(oldTreeRootPtr->getItem());
-		newNodePtr->setLeft(copyTree(oldTreeRootPtr->getLeftChildPtr()));
-		newNodePtr->setRight(copyTree(oldTreeRootPtr->getRightChildPtr()));
+		newNodePtr->setLeftChildPtr(copyTree(oldTreeRootPtr->getLeftChildPtr()));
+		newNodePtr->setRightChildPtr(copyTree(oldTreeRootPtr->getRightChildPtr()));
 	}
 	return newNodePtr;
 }
@@ -276,6 +274,7 @@ void BinaryNodeTree<ItemType>::destroyTree(std::shared_ptr<BinaryNode<ItemType>>
 		destroyTree(subTreePtr->getLeftChildPtr());
 		destroyTree(subTreePtr->getRightChildPtr());
 		subTreePtr.reset();
+		subTreePtr = nullptr;
 	}
 }
 

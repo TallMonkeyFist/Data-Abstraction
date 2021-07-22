@@ -16,6 +16,8 @@ private:
 
 public:
 	HashedDictionary();
+	HashedDictionary(int size);
+	HashedDictionary(const HashedDictionary<KeyType, ValueType>& dictionary);
 
 	~HashedDictionary();
 
@@ -39,7 +41,7 @@ private:
 	int entryCount;
 	int hashTableSize;
 
-	int getHashIndex(KeyType searchKey);
+	int getHashIndex(KeyType searchKey) const;
 };
 
 #include "HashedDictionary.cpp"

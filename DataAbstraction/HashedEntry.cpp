@@ -1,11 +1,11 @@
 template <class KeyType, class ValueType>
-HashedEntry<KeyType, ValueType>::HashedEntry()
+HashedEntry<KeyType, ValueType>::HashedEntry() : Entry<KeyType, ValueType>(KeyType(), ValueType()), nextPtr(nullptr)
 {
 }
 
 template <class KeyType, class ValueType>
 HashedEntry<KeyType, ValueType>::HashedEntry(const KeyType& searchKey,
-	const ValueType& newValue) : Entry<KeyType, ValueType>(searchKey, newValue)
+	const ValueType& newValue) : Entry<KeyType, ValueType>(searchKey, newValue), nextPtr(nullptr)
 {
 }
 

@@ -5,15 +5,16 @@
 #include "Entry.h"
 #include "NotFoundException.h"
 #include "PreconViolatedExcept.h"
+#include <functional>
 
 template <class KeyType, class ValueType>
 class TreeDictionary : public DictionaryInterface<KeyType, ValueType>
 {
 public:
 	TreeDictionary();
-	TreeDictionary(const TreeDictionary<Entry<KeyType, ValueType>>& dictionary);
+	TreeDictionary(const TreeDictionary<KeyType, ValueType>& dictionary);
 
-	virtual~TreeDictionary();
+	virtual ~TreeDictionary();
 
 	bool isEmpty() const;
 	int getNumberOfEntries() const;

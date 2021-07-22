@@ -1,7 +1,5 @@
-#include "Entry.h"
-
 template <class KeyType, class ValueType>
-Entry<KeyType, ValueType>::Entry()
+Entry<KeyType, ValueType>::Entry() : key(KeyType()), value(ValueType())
 {
 }
 
@@ -37,7 +35,7 @@ void Entry<KeyType, ValueType>::setKey(const KeyType& newKey)
 template <class KeyType, class ValueType>
 bool Entry<KeyType, ValueType>::operator==(const Entry<KeyType, ValueType>& rightHandValue) const
 {
-	return ((key == rightHandValue.key) && (value == rightHandValue.value));
+	return (key == rightHandValue.key);
 }
 template <class KeyType, class ValueType>
 bool Entry<KeyType, ValueType>::operator>(const Entry<KeyType, ValueType>& rightHandValue) const

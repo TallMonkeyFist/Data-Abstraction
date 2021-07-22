@@ -1,5 +1,3 @@
-#include "ArrayDictionary.h"
-
 template <class KeyType, class ValueType>
 ArrayDictionary<KeyType, ValueType>::ArrayDictionary() : maxEntries(DEFAULT_CAPACITY), entryCount(0)
 {

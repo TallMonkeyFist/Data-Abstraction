@@ -1,5 +1,3 @@
-#include "BinarySearchTree.h"
-
 template <class ItemType>
 BinarySearchTree<ItemType>::BinarySearchTree() : rootPtr(nullptr)
 {
@@ -80,7 +78,7 @@ bool BinarySearchTree<ItemType>::remove(const ItemType& target)
 template <class ItemType>
 void BinarySearchTree<ItemType>::clear()
 {
-	removeNode(rootPtr);
+	rootPtr = nullptr;
 }
 
 template <class ItemType>
@@ -95,7 +93,7 @@ ItemType BinarySearchTree<ItemType>::getEntry(const ItemType& target) const thro
 }
 
 template <class ItemType>
-bool BinarySearchTree<ItemType>::contains(const ItemType& target)
+bool BinarySearchTree<ItemType>::contains(const ItemType& target) const
 {
 	return findNode(rootPtr, target) != nullptr;
 }

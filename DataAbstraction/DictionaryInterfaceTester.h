@@ -1,6 +1,8 @@
 #pragma once
 
 #include "ArrayDictionary.h"
+#include "TreeDictionary.h"
+#include "HashedDictionary.h"
 #include <iostream>
 
 class DictionaryInterfaceTester
@@ -74,9 +76,13 @@ private:
 		{
 			copyPtr = new ArrayDictionary<int, std::string>(*(ArrayDictionary<int, std::string>*)dictPtr);
 		}
+		else if (toupper(type) == 'H')
+		{
+			copyPtr = new HashedDictionary<int, std::string>(*(HashedDictionary<int, std::string>*)dictPtr);
+		}
 		else
 		{
-			copyPtr = new ArrayDictionary<int, std::string>(*(ArrayDictionary<int, std::string>*)dictPtr);
+			copyPtr = new TreeDictionary<int, std::string>(*(TreeDictionary<int, std::string>*)dictPtr);
 		}
 
 		std::cout << "\nPrinting dictPtr\n";
@@ -116,20 +122,31 @@ public:
 		DictionaryInterface<int, std::string>* dictionaryPtr = nullptr;
 		char userChoice;
 		std::cout << "Enter 'A' to test the array-based implementation\n";
+		std::cout << "Enter 'H' to test the hashed-based implementation\n";
+		std::cout << "Enter 'T' to test the hashed-based implementation\n";
 		std::cin >> userChoice;
 
 		if (toupper(userChoice) == 'A')
 		{
 			dictionaryPtr = new ArrayDictionary<int, std::string>();
 			std::cout << "Testing the array-based dictionary\n\n";
-		}
-		else
-		{
-			dictionaryPtr = new ArrayDictionary<int, std::string>();
-			std::cout << "Testing the array-based dictionary\n\n";
-		}
 
-		dictionaryTester(dictionaryPtr, userChoice);
+			dictionaryTester(dictionaryPtr, userChoice);
+		}
+		else if (toupper(userChoice) == 'H')
+		{
+			dictionaryPtr = new HashedDictionary<int, std::string>();
+			std::cout << "Testing the hashed-based dictionary\n\n";
+
+			dictionaryTester(dictionaryPtr, userChoice);
+		}
+		else if(toupper(userChoice) == 'T')
+		{
+			dictionaryPtr = new TreeDictionary<int, std::string>();
+			std::cout << "Testing the tree-based dictionary\n\n";
+
+			dictionaryTester(dictionaryPtr, userChoice);
+		}
 
 		delete dictionaryPtr;
 		dictionaryPtr = nullptr;
