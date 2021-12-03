@@ -29,8 +29,6 @@ public:
 	ValueType getValue(const KeyType& searchKey) const throw(NotFoundException);
 	bool contains(const KeyType& searchKey) const;
 
-	/**Traverses the entries in this dictionary in sorted search-key order
-	and calls a given client function once for the value in each entry.*/
 	void traverse(void visit(ValueType&)) const;
 
 	bool replace(const KeyType& searchKey, const ValueType& newValue);

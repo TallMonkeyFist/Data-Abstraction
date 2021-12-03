@@ -82,6 +82,9 @@
     <Filter Include="Header Files\Dictionary">
       <UniqueIdentifier>{787b9389-8bd5-44f0-8557-306c7817385d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\BalancedTree">
+      <UniqueIdentifier>{ccb834fa-6528-4673-b052-0aa906bd2613}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Driver.cpp">
@@ -107,6 +110,18 @@
     </ClCompile>
     <ClCompile Include="NotFoundException.cpp">
       <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="Trie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AVLTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tree234.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RBTree.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -268,6 +283,36 @@
     </ClInclude>
     <ClInclude Include="DictionaryInterfaceTester.h">
       <Filter>Header Files\Dictionary</Filter>
+    </ClInclude>
+    <ClInclude Include="SortedLinkedDictionary.h">
+      <Filter>Header Files\Dictionary</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedSortedDictionary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedEntry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Trie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AVLTree.h">
+      <Filter>Header Files\BalancedTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Tree23.h">
+      <Filter>Header Files\BalancedTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Tree234.h">
+      <Filter>Header Files\BalancedTree</Filter>
+    </ClInclude>
+    <ClInclude Include="RBTree.h">
+      <Filter>Header Files\BalancedTree</Filter>
+    </ClInclude>
+    <ClInclude Include="BalancedTreeInterface.h">
+      <Filter>Header Files\BalancedTree</Filter>
+    </ClInclude>
+    <ClInclude Include="TriNode.h">
+      <Filter>Header Files\BalancedTree</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

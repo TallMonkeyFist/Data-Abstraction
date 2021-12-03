@@ -9,6 +9,11 @@ Entry<KeyType, ValueType>::Entry(const KeyType& keyValue, const ValueType& newVa
 }
 
 template <class KeyType, class ValueType>
+Entry<KeyType, ValueType>::~Entry()
+{
+}
+
+template <class KeyType, class ValueType>
 ValueType Entry<KeyType, ValueType>::getValue() const
 {
 	return value;
@@ -37,6 +42,13 @@ bool Entry<KeyType, ValueType>::operator==(const Entry<KeyType, ValueType>& righ
 {
 	return (key == rightHandValue.key);
 }
+
+template <class KeyType, class ValueType>
+bool Entry<KeyType, ValueType>::operator!=(const Entry<KeyType, ValueType>& rightHandValue) const
+{
+	return !(key == rightHandValue.key);
+}
+
 template <class KeyType, class ValueType>
 bool Entry<KeyType, ValueType>::operator>(const Entry<KeyType, ValueType>& rightHandValue) const
 {

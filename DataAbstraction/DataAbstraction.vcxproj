@@ -140,13 +140,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ArrayUtils.h" />
+    <ClCompile Include="AVLTree.cpp" />
     <ClCompile Include="BagInterfaceTester.h" />
     <ClCompile Include="Driver.cpp" />
     <ClCompile Include="GoodMemory.cpp" />
     <ClCompile Include="Math.h" />
     <ClCompile Include="NotFoundException.cpp" />
     <ClCompile Include="PreconViolatedExcept.cpp" />
+    <ClCompile Include="RBTree.cpp" />
     <ClCompile Include="StringUtil.h" />
+    <ClCompile Include="Tree234.cpp" />
+    <ClCompile Include="Trie.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArrayBag.h" />
@@ -155,7 +159,9 @@
     <ClInclude Include="ArrayMaxHeap.h" />
     <ClInclude Include="ArrayQueue.h" />
     <ClInclude Include="ArrayStack.h" />
+    <ClInclude Include="AVLTree.h" />
     <ClInclude Include="BagInterface.h" />
+    <ClInclude Include="BalancedTreeInterface.h" />
     <ClInclude Include="BinaryNode.h" />
     <ClInclude Include="BinaryNodeTree.h" />
     <ClInclude Include="BinarySearchTree.h" />
@@ -174,9 +180,11 @@
     <ClInclude Include="HeapInterface.h" />
     <ClInclude Include="HeapPriorityQueue.h" />
     <ClInclude Include="LinkedBag.h" />
+    <ClInclude Include="LinkedEntry.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="LinkedListIterator.h" />
     <ClInclude Include="LinkedQueue.h" />
+    <ClInclude Include="LinkedSortedDictionary.h" />
     <ClInclude Include="LinkedSortedList.h" />
     <ClInclude Include="LinkedStack.h" />
     <ClInclude Include="ListInterface.h" />
@@ -190,7 +198,9 @@
     <ClInclude Include="PriorityQueueInterface.h" />
     <ClInclude Include="QueueInterface.h" />
     <ClInclude Include="QueueInterfaceTester.h" />
+    <ClInclude Include="RBTree.h" />
     <ClInclude Include="SL_PriorityQueue.h" />
+    <ClInclude Include="SortedLinkedDictionary.h" />
     <ClInclude Include="SortedListAsA.h" />
     <ClInclude Include="SortedListHasA.h" />
     <ClInclude Include="SortedListInterfaceTester.h" />
@@ -200,8 +210,12 @@
     <ClInclude Include="StackInterface.h" />
     <ClInclude Include="StackInterfaceTester.h" />
     <ClInclude Include="ToyBox.h" />
+    <ClInclude Include="Tree23.h" />
+    <ClInclude Include="Tree234.h" />
     <ClInclude Include="TreeDictionary.h" />
     <ClInclude Include="TreeNode.h" />
+    <ClInclude Include="Trie.h" />
+    <ClInclude Include="TriNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

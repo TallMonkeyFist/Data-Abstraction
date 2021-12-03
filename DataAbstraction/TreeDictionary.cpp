@@ -74,10 +74,15 @@ bool TreeDictionary<KeyType, ValueType>::contains(const KeyType& searchKey) cons
 	return entryTree.contains(entry);
 }
 
+template<class KeyType, class ValueType>
+static void(*visitFunc)(ValueType&);
+
 template <class KeyType, class ValueType>
 void TreeDictionary<KeyType, ValueType>::traverse(void visit(ValueType&)) const
 {
-	std::cout << "Not Supported\n";
+	visitFunc<KeyType, ValueType> = visit;
+	void (*traverseFunc)(Entry<KeyType, ValueType>&) = [](Entry<KeyType, ValueType>& entry) {ValueType value = entry.getValue(); visitFunc<KeyType, ValueType>(value); };
+	entryTree.inorderTraverse(traverseFunc);
 }
 
 template <class KeyType, class ValueType>

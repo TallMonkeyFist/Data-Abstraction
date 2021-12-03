@@ -1,19 +1,19 @@
 #pragma once
 
-#include "DictionaryInterface.h"
-#include "BinarySearchTree.h"
 #include "Entry.h"
+#include "LinkedSortedList.h"
 #include "NotFoundException.h"
+#include "DictionaryInterface.h"
 #include "PreconViolatedExcept.h"
 
 template <class KeyType, class ValueType>
-class TreeDictionary : public DictionaryInterface<KeyType, ValueType>
+class SortedLinkedDictionary : public DictionaryInterface<KeyType, ValueType>
 {
 public:
-	TreeDictionary();
-	TreeDictionary(const TreeDictionary<KeyType, ValueType>& dictionary);
+	SortedLinkedDictionary();
+	SortedLinkedDictionary(const SortedLinkedDictionary<KeyType, ValueType>& dictionary);
 
-	virtual ~TreeDictionary();
+	~SortedLinkedDictionary();
 
 	bool isEmpty() const;
 	int getNumberOfEntries() const;
@@ -30,7 +30,7 @@ public:
 	bool replace(const KeyType& searchKey, const ValueType& newValue);
 
 private:
-	BinarySearchTree<Entry<KeyType, ValueType>> entryTree;
+	LinkedSortedList<Entry<KeyType, ValueType>> entryList;
 };
 
-#include "TreeDictionary.cpp"
+#include "SortedLinkedDictionary.cpp"

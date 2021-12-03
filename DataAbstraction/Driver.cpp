@@ -13,6 +13,8 @@
 #include "BinaryTreeInterfaceTester.h"
 #include "ArrayMaxHeap.h"
 #include "DictionaryInterfaceTester.h"
+#include "Trie.h"
+#include "Tree23.h"
 
 #include <algorithm>
 #include <chrono>
@@ -122,6 +124,20 @@ void testIterator()
 	list = nullptr;
 }
 
+int TrieTest()
+{
+	Trie* trie = new Trie();
+	trie->add("hello");
+	std::cout << "contains hello returns: " << trie->contains("hello") << '\n';
+	std::cout << "contains hell returns: " << trie->contains("hell") << '\n';
+	trie->add("hell");
+	std::cout << "contains hell returns: " << trie->contains("hell") << '\n';
+	std::cout << "contains hellos returns: " << trie->contains("hellos") << '\n';
+	delete trie;
+	trie = nullptr;
+	return 0;
+}
+
 int main(int argv, char** argc)
 {
 	//For Checking for memory leaks
@@ -147,8 +163,8 @@ int main(int argv, char** argc)
 
 	//testIterator();*/
 
-	DictionaryInterfaceTester::TestDictionary();
-
+	//DictionaryInterfaceTester::TestDictionary();
+	//TrieTest();
 	//For Checking for memory leaks
 	_CrtDumpMemoryLeaks();
 	return 0;

@@ -3,14 +3,22 @@
 #include "ArrayDictionary.h"
 #include "TreeDictionary.h"
 #include "HashedDictionary.h"
+#include "SortedLinkedDictionary.h"
+#include "LinkedSortedDictionary.h"
 #include <iostream>
 
 class DictionaryInterfaceTester
 {
 private:
+
 	static void printValue(std::string& value)
 	{
 		std::cout << value + " ";
+	}
+
+	static void printEntry(Entry<int, std::string>& entry)
+	{
+		std::cout << entry.getValue() << '\n';
 	}
 
 	static void dictionaryTester(DictionaryInterface<int, std::string>* dictPtr, char type)
@@ -80,6 +88,14 @@ private:
 		{
 			copyPtr = new HashedDictionary<int, std::string>(*(HashedDictionary<int, std::string>*)dictPtr);
 		}
+		else if (toupper(type) == 'L')
+		{
+			copyPtr = new SortedLinkedDictionary<int, std::string>(*(SortedLinkedDictionary<int, std::string>*)dictPtr);
+		}
+		else if (toupper(type) == 'B')
+		{
+			copyPtr = new LinkedSortedDictionary<int, std::string>(*(LinkedSortedDictionary<int, std::string>*)dictPtr);
+		}
 		else
 		{
 			copyPtr = new TreeDictionary<int, std::string>(*(TreeDictionary<int, std::string>*)dictPtr);
@@ -123,7 +139,9 @@ public:
 		char userChoice;
 		std::cout << "Enter 'A' to test the array-based implementation\n";
 		std::cout << "Enter 'H' to test the hashed-based implementation\n";
-		std::cout << "Enter 'T' to test the hashed-based implementation\n";
+		std::cout << "Enter 'L' to test the sorted-linked list implementation\n";
+		std::cout << "Enter 'B' to test the sorted-linked implementation\n";
+		std::cout << "Enter 'T' to test the tree-based implementation\n";
 		std::cin >> userChoice;
 
 		if (toupper(userChoice) == 'A')
@@ -137,6 +155,20 @@ public:
 		{
 			dictionaryPtr = new HashedDictionary<int, std::string>();
 			std::cout << "Testing the hashed-based dictionary\n\n";
+
+			dictionaryTester(dictionaryPtr, userChoice);
+		}
+		else if (toupper(userChoice) == 'L')
+		{
+			dictionaryPtr = new SortedLinkedDictionary<int, std::string>();
+			std::cout << "Testing the sorted-linked list dictionary\n\n";
+
+			dictionaryTester(dictionaryPtr, userChoice);
+		}
+		else if (toupper(userChoice) == 'B')
+		{
+			dictionaryPtr = new LinkedSortedDictionary<int, std::string>();
+			std::cout << "Testing the sorted-linked dictionary\n\n";
 
 			dictionaryTester(dictionaryPtr, userChoice);
 		}
